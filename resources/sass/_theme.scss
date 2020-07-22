@@ -1,0 +1,177 @@
+
+a {
+    display: inline-block;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+#sidebar {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    z-index: 1001;
+    overflow: auto;
+
+    .sidebar-body {
+        ul {
+            li {
+                border-bottom: 1px solid #eee;
+
+                a {
+                    padding: 10px 20px;
+                    display: block;
+                    color: #000;
+
+                    span {
+                        color: #000;
+                    }
+
+                    .image-round {
+                        width: 40px;
+                        height: 40px;
+
+                        @include radius(100%);
+                    }
+
+                    &:hover {
+                        background: #f6f6f6;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.main {
+    margin-left: 300px;
+
+    .content-box {
+        background: #ffffff;
+
+        @include defaultShadow();
+    }
+
+    .user-image {
+        width: 100px;
+        height: 100px;
+
+        @include radius(100%);
+
+         span {
+             font-size: 24px;
+             color: #fff;
+         }
+    }
+
+    .user-info {
+        span.position {
+            color: #aaa;
+        }
+    }
+}
+
+.task-table {
+    background: #ffffff;
+    @include defaultShadow();
+
+    .task-runner {
+        height: 600px;
+
+        > div {
+            border-right: 2px dashed #eeeeee;
+
+            &:last-child {
+                border: none;
+            }
+        }
+
+        .runway {
+            background: #f4f4f4;
+
+            .task-head {
+                h4 {
+                    border-bottom: 1px solid #dddddd;
+                }
+            }
+
+            .task-body {
+                .task {
+                    background: #e1e1e1;
+                    padding: 15px;
+                    cursor: pointer;
+                    margin-top: 15px;
+
+                    @include radius(5px);
+                    @include transition(.3s);
+
+                    h6 {
+                        margin: 0;
+                    }
+
+                    &:first-child {
+                        margin-top: 0;
+                    }
+
+                    &:hover {
+                        background: #dadada;
+                    }
+                    .task-user {
+                        width: 30px;
+                        height: 30px;
+                        color: #fff;
+
+                        @include radius(100%);
+                    }
+                }
+                .task-new {
+                    padding: 5px 10px;
+                    cursor: pointer;
+                    margin-top: 15px;
+                    text-align: center;
+                    font-weight: bold;
+                    border: 2px dashed #ddd;
+
+                    @include radius(5px);
+                    @include transition(.3s);
+
+                    &:hover {
+                        background: $indigo;
+                        border-color: $indigo;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal {
+
+    background: rgba(255, 255, 255, .9);
+
+    .modal-inner {
+        width: 700px;
+        height: auto;
+        background: #ffffff;
+
+        @include defaultShadow();
+
+        .modal-header {
+            h4 {
+                margin: 0;
+            }
+        }
+
+    }
+}
+.task-assigned {
+    background: #f4f4f4;
+    margin-bottom: 10px;
+    padding: 10px;
+    @include radius(5px);
+}
