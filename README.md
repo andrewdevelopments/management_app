@@ -4,7 +4,7 @@
 
 Task Management Application
 
-- git clone https://github.com/andrewdevelopments/management_app.git .
+- git clone https://github.com/andrewdevelopments/management_app.git . (added a dot at the end to extract only the subfolders)
 - composer install
 - copy .env.example to .env
 - php artisan key:generate
@@ -17,6 +17,8 @@ Task Management Application
 - php artisan migrate:fresh
 - php artisan db:seed
 
-- If you want to have all the permissions you need to login with <strong>admin@admin.ro</strong> and <strong>password</strong>
-- If you want to see the user side, login with <strong>user@user.ro</strong> <strong>user</strong>
-- Also all the user from this seed have the  password "secret"
+Now you can open the app or run php artisan serve
+
+If you want to have all the permissions you need to login with <strong>admin@admin.ro</strong> and <strong>password</strong>
+If you want to see the user side, login with <strong>user@user.ro</strong> <strong>user</strong>
+Also all the user from this seed have the  password "secret"
