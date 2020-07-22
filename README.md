@@ -2,12 +2,21 @@
 
 ## Instalation
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Task Management Application
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- git clone https://github.com/andrewdevelopments/management_app.git .
+- composer install
+- copy .env.example to .env
+- php artisan key:generate
+
+- open .env file and replace 
+- DB_DATABASE=yourdatabase
+- DB_USERNAME=yourusernameifyouhave
+- DB_PASSWORD=yourpasswordifyouhave
+
+- php artisan migrate:fresh
+- php artisan db:seed
+
+- If you want to have all the permissions you need to login with <strong>admin@admin.ro</strong> and <strong>password</strong>
+- If you want to see the user side, login with <strong>user@user.ro</strong> <strong>user</strong>
+- Also all the user from this seed have the  password "secret"
