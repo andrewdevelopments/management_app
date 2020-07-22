@@ -21,6 +21,6 @@ Task Management Application
 
 Now you can open the app or run php artisan serve
 
-If you want to have all the permissions you need to login with <strong>admin@admin.ro</strong> and <strong>password</strong>
-If you want to see the user side, login with <strong>user@user.ro</strong> <strong>user</strong>
+If you want to have all the permissions you need to login with: <strong>admin@admin.ro</strong> and the password is <strong>admin</strong>
+If you want to see the user side, login with: <strong>user@user.ro</strong> and the password is: <strong>user</strong>
 Also all the user from this seed have the  password "secret"
