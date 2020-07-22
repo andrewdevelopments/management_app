@@ -4,6 +4,8 @@
 
 Task Management Application
 
+- make a new project in your Laragon, XAMPP, MAMP app
+- go to project folder
 - git clone https://github.com/andrewdevelopments/management_app.git . (added a dot at the end to extract only the subfolders)
 - composer install
 - copy .env.example to .env
