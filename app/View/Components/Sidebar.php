@@ -34,6 +34,9 @@ class Sidebar extends Component
      */
     public function render()
     {
-        return view('components.sidebar');
+
+        if(\Auth::user()) {
+            return view('components.sidebar');
+        }
     }
 }
